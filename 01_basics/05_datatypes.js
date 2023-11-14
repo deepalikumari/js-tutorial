@@ -33,3 +33,33 @@ const myfun = function(){
 
 console.log(typeof myfun);
 console.log(typeof bigNumber);
+
+
+/////memories
+//satck memory & heap memory
+//stack(primitive) copy of original value
+//heap(non-primitive) reference of original value
+
+let str2 = "deeplaikumari"
+
+
+//use stck to hold value as it is string
+let myyoutube = "dk@gmail.com"
+let anothername = myyoutube
+anothername = "deepali kumari"
+console.log(myyoutube);
+console.log(anothername);
+
+
+
+//heap reference will be same, so same output
+//since below is the structure of object we are creating an object so it uses an heap to store valu
+
+let user1 = {
+    email: "dhkl",
+    upi : "hjki"
+} 
+let user2 = user1
+user2.email = "hjgty@gmail.com"
+console.log(user1.email);
+console.log(user2.email);
